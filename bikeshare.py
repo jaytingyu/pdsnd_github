@@ -62,15 +62,19 @@ def load_data(city, month, day):
         df - Pandas DataFrame containing city data filtered by month and day
     """
     
+    # 대소문자 구분없이 입력 가능
     # Convert user input city to lowercase
     city = city.lower()
 
+    # 대소문자 구분없이 입력 가능
     # Convert user input month to lowercase
     month = month.lower()
-    
+
+    # 대소문자 구분없이 입력 가능
     # Convert user input day to lowercase
     day = day.lower()
     
+    # 데이터 프레임으로 데이터 파일 로드
     # Load data file into a dataframe
     df = pd.read_csv(CITY_DATA.get(city))
 
@@ -120,7 +124,7 @@ def time_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+#스테이션 통계 함수
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
 
@@ -213,6 +217,7 @@ def display_raw_data(df):
         else:
             break
 
+# 메인함수
 def main():
     while True:
         city, month, day = get_filters()
