@@ -65,11 +65,12 @@ def load_data(city, month, day):
     # 대소문자 구분없이 입력 가능
     # Convert user input month to lowercase
     month = month.lower()
-    
+
     # 대소문자 구분없이 입력 가능
     # Convert user input day to lowercase
     day = day.lower()
     
+    # 데이터 프레임으로 데이터 파일 로드
     # Load data file into a dataframe
     df = pd.read_csv(CITY_DATA.get(city))
 
