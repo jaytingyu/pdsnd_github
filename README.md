@@ -11,6 +11,9 @@ Udacity project
 
 ### Files used
 bikeshare.py
+chicago.csv
+new_york_city.csv
+washington.csv
 
 ### Credits
 https://github.com/jaytingyu/pdsnd_github
